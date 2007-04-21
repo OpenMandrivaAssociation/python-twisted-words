@@ -2,7 +2,7 @@ Summary:        Chat and Instant Messaging module for Twisted
 Name:           python-twisted-words
 Version: 0.4.0
 %define directory_down %(echo %version|perl -n -e  '/^(\d+\.\d+).*$/; print \$1 ')
-Release: %mkrel 1
+Release: %mkrel 2
 Source0:        http://tmrc.mit.edu/mirror/twisted/Words/%directory_down/TwistedWords-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
@@ -47,5 +47,6 @@ Twisted Words includes:
 %doc  doc/*
 %py_platsitedir/twisted/words/
 %py_platsitedir/twisted/plugins/*
+%py_platsitedir/*.egg-info
 %_mandir/man1/*
 
