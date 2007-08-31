@@ -2,7 +2,7 @@ Summary:        Chat and Instant Messaging module for Twisted
 Name:           python-twisted-words
 Version: 0.5.0
 %define directory_down %(echo %version|perl -n -e  '/^(\d+\.\d+).*$/; print \$1 ')
-Release: %mkrel 1
+Release: %mkrel 2
 Source0:        http://tmrc.mit.edu/mirror/twisted/Words/%directory_down/TwistedWords-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
@@ -13,8 +13,6 @@ BuildRequires:	python-devel python-twisted-core
 Requires:       python-twisted-core
 # for words/tap.py
 Requires:       python-twisted-web
-# for jabber 
-Requires:       python-twisted-xish
 
 %description
 Twisted Words includes:
