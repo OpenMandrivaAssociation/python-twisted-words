@@ -7,6 +7,7 @@ Source0:        http://tmrc.mit.edu/mirror/twisted/Words/%directory_down/Twisted
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/projects/words/
+BuildRoot:      %{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel python-twisted-core
 #BuildArch:      noarch
 Requires:       python-twisted-core
