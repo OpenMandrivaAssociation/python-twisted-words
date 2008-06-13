@@ -1,12 +1,14 @@
+%define version 8.1.0
+%define rel 1
+
 Summary:        Chat and Instant Messaging module for Twisted
 Name:           python-twisted-words
-Version: 0.5.0
-%define directory_down %(echo %version|perl -n -e  '/^(\d+\.\d+).*$/; print \$1 ')
-Release: %mkrel 2
-Source0:        http://tmrc.mit.edu/mirror/twisted/Words/%directory_down/TwistedWords-%{version}.tar.bz2
+Version: %version
+Release: %mkrel 1
+Source0:        http://tmrc.mit.edu/mirror/twisted/Words/8.1/TwistedWords-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
-URL:            http://twistedmatrix.com/projects/words/
+URL:            http://twistedmatrix.com/trac/wiki/TwistedWords
 BuildRoot:      %{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel python-twisted-core
 #BuildArch:      noarch
