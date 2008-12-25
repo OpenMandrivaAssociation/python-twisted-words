@@ -1,5 +1,5 @@
 %define version 8.1.0
-%define rel 1
+%define rel 2
 
 Summary:        Chat and Instant Messaging module for Twisted
 Name:           python-twisted-words
