@@ -1,5 +1,5 @@
-%define version 8.1.0
-%define rel 2
+%define version 8.2.0
+%define rel 1
 
 Summary:        Chat and Instant Messaging module for Twisted
 Name:           python-twisted-words
@@ -18,10 +18,10 @@ Requires:       python-twisted-web
 
 %description
 Twisted Words includes:
- * Low-level protocol implementations of OSCAR (AIM and ICQ), IRC, MSN, 
+ * Low-level protocol implementations of OSCAR (AIM and ICQ), IRC, MSN,
    TOC (AIM).
  * Jabber libraries.
- * Prototypes of chat server and client frameworks built on top of 
+ * Prototypes of chat server and client frameworks built on top of
    the protocols.
 
 %prep
