@@ -1,11 +1,12 @@
-%define version 8.2.0
+%define version 9.0.0
 %define rel 1
+%define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
 Summary:        Chat and Instant Messaging module for Twisted
 Name:           python-twisted-words
 Version: %version
 Release: %mkrel 1
-Source0:        http://tmrc.mit.edu/mirror/twisted/Words/8.1/TwistedWords-%{version}.tar.bz2
+Source0:        http://tmrc.mit.edu/mirror/twisted/Words/%{mainver}/TwistedWords-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/trac/wiki/TwistedWords
@@ -41,8 +42,6 @@ Twisted Words includes:
 %__rm -rf %buildroot
 
 %files
-%defattr(0755,root,root,0755)
-%_bindir/*
 %defattr(0644,root,root,0755)
 %doc  doc/*
 %py_platsitedir/twisted/words/
