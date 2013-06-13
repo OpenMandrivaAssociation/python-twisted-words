@@ -5,7 +5,6 @@ Name:           python-twisted-words
 Version:	13.0.0
 Release:	1
 Source0:        http://twistedmatrix.com/Releases/Words/13.0/TwistedWords-%{version}.tar.bz2
-Source1:	%{name}.rpmlintrc
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/trac/wiki/TwistedWords
