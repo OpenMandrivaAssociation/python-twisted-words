@@ -1,18 +1,11 @@
-%define name python-twisted-words
-%define version 12.2.0
-%define rel 1
 %define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
-# There is no debug here, but can't build as noarch,
-# since some 'twisted' modules are arch-dependent and all these modules
-# should be located in the same place
-%define debug_package %{nil}
-
 Summary:        Chat and Instant Messaging module for Twisted
-Name:           %{name}
-Version:	%{version}
-Release:	%mkrel %{rel}
-Source0:        http://twistedmatrix.com/Releases/Words/%{mainver}/TwistedWords-%{version}.tar.bz2
+Name:           python-twisted-words
+Version:	13.0.0
+Release:	1
+Source0:        http://twistedmatrix.com/Releases/Words/13.0/TwistedWords-%{version}.tar.bz2
+Source1:	%{name}.rpmlintrc
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/trac/wiki/TwistedWords
@@ -20,6 +13,11 @@ BuildRequires:	python-devel python-twisted-core
 Requires:       python-twisted-core
 # for words/tap.py
 Requires:       python-twisted-web
+
+# There is no debug here, but can't build as noarch,
+# since some 'twisted' modules are arch-dependent and all these modules
+# should be located in the same place
+%define debug_package %{nil}
 
 %description
 Twisted Words includes:
@@ -37,7 +35,6 @@ Twisted Words includes:
 %__python setup.py build
 
 %install
-%__rm -rf %{buildroot}
 %__python setup.py install --root=%{buildroot} --install-purelib=%{py_platsitedir}
 
 
@@ -49,3 +46,4 @@ Twisted Words includes:
 %py_platsitedir/twisted/words/*
 %py_platsitedir/twisted/plugins/*
 %py_platsitedir/*.egg-info
+
