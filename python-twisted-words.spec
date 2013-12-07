@@ -8,7 +8,7 @@
 Summary:	Chat and Instant Messaging module for Twisted
 Name:		python-twisted-words
 Version:	13.0.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Python
 Url:		http://twistedmatrix.com/trac/wiki/TwistedWords
