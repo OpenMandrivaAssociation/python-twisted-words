@@ -40,7 +40,7 @@ Twisted Words includes:
 
 %files
 %defattr(0644,root,root,0755)
-%doc LICENSE NEWS README doc/*
+%doc LICENSE NEWS README *
 %dir %{py_platsitedir}/twisted/words/
 %{py_platsitedir}/twisted/words/*
 %{py_platsitedir}/twisted/plugins/*
