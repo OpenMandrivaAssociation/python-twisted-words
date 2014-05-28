@@ -6,13 +6,14 @@
 %define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
 Summary:	Chat and Instant Messaging module for Twisted
+
 Name:		python-twisted-words
-Version:	13.2.0
+Version:	14.0.0
 Release:	1
 License:	MIT
 Group:		Development/Python
 Url:		http://twistedmatrix.com/trac/wiki/TwistedWords
-Source0:	http://twistedmatrix.com/Releases/Words/13.2/TwistedWords-%{version}.tar.bz2
+Source0:	http://twistedmatrix.com/Releases/Words/14.0/TwistedWords-%{version}.tar.bz2
 BuildRequires:	python-twisted-core
 BuildRequires:	pkgconfig(python)
 Requires:	python-twisted-core
@@ -44,6 +45,7 @@ Twisted Words includes:
 %{py_platsitedir}/twisted/words/*
 %{py_platsitedir}/twisted/plugins/*
 %{py_platsitedir}/*.egg-info
+
 
 
 
