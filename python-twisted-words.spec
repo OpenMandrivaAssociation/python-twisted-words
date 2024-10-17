@@ -12,7 +12,7 @@ Version:	14.0.0
 Release:	2
 License:	MIT
 Group:		Development/Python
-Url:		http://twistedmatrix.com/trac/wiki/TwistedWords
+Url:		https://twistedmatrix.com/trac/wiki/TwistedWords
 Source0:	http://twistedmatrix.com/Releases/Words/14.0/TwistedWords-%{version}.tar.bz2
 BuildRequires:	python-twisted-core
 BuildRequires:	pkgconfig(python)
